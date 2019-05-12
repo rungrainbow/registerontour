@@ -1,0 +1,80 @@
+.background-image {
+  background-image: url('/media/pic/skybg-01.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1360px;
+  min-height: 768px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /*filter: blur(.2em);
+  -webkit-filter: blur(.2em);*/
+  position: fixed;
+  z-index: -1;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.container{
+  margin: 30px auto;
+  opacity: 20%;
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+}
+
+#mycontainer {
+  -webkit-animation-name: pulse 5s infinite;
+  animation-name: pulse 5s infinite;
+  margin: auto;
+  padding-top: .02em;
+  background-color: transparent;
+  width: 24em;
+  height: 5em;
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.row-in-li {
+  margin-bottom: 0px;
+}
+
+body {
+  font-family: 'Athiti', sans-serif;
+  font-weight: 800;
+}
